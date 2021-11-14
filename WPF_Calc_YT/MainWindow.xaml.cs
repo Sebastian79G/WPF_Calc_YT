@@ -33,57 +33,57 @@ namespace WPF_Calc_YT
 
         private void zeroButton_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "0";
+            calcDisplay.Text += "0";
         }
 
         private void num1_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "1";
+            calcDisplay.Text += "1";
         }
 
         private void num2_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "2";
+            calcDisplay.Text += "2";
         }
 
         private void num3_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "3";
+            calcDisplay.Text += "3";
         }
 
         private void num4_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "4";
+            calcDisplay.Text += "4";
         }
 
         private void num5_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "5";
+            calcDisplay.Text += "5";
         }
 
         private void num6_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "6";
+            calcDisplay.Text += "6";
         }
 
         private void num7_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "7";
+            calcDisplay.Text += "7";
         }
 
         private void num8_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "8";
+            calcDisplay.Text += "8";
         }
 
         private void num9_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text = "9";
+            calcDisplay.Text += "9";
         }
 
         private void decimalButton_Click(object sender, RoutedEventArgs e)
         {
-
+            calcDisplay.Text += ".";
         }
 
         private void plusButton_Click(object sender, RoutedEventArgs e)
