@@ -5,26 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Calc_YT"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="calcYT" Margin="0,0,488,129">
-        <Label x:Name="calcDisplay" Content="0" HorizontalAlignment="Left" Margin="12,8,0,0" VerticalAlignment="Top" Background="Black" Width="290" Height="70" Foreground="#FFF9F9F9" FontSize="36"/>
-        <Button x:Name="num5" Content="5" HorizontalAlignment="Left" Margin="84,165,0,0" VerticalAlignment="Top" Height="36" Width="70" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="num3" Content="3" HorizontalAlignment="Left" Margin="158,206,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="num7" Content="7" HorizontalAlignment="Left" Margin="12,124,0,0" VerticalAlignment="Top" Height="36" Width="68" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="num2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.516,0.56" Margin="84,206,0,0" FontSize="20"/>
-        <Button x:Name="num8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.516,0.56" Margin="85,124,0,0" FontSize="20"/>
-        <Button x:Name="num4" Content="4" HorizontalAlignment="Left" Margin="12,165,0,0" VerticalAlignment="Top" Height="36" Width="67" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="num1" Content="1" HorizontalAlignment="Left" Margin="12,206,0,0" VerticalAlignment="Top" Height="36" Width="67" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="num6" Content="6" HorizontalAlignment="Left" Margin="158,165,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="num9" Content="9" HorizontalAlignment="Left" Margin="159,124,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="zeroButton" Content="0" HorizontalAlignment="Left" Margin="12,247,0,0" VerticalAlignment="Top" Height="36" Width="68" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="decimalButton" Content="." HorizontalAlignment="Left" Margin="86,247,0,0" VerticalAlignment="Top" Height="36" Width="68" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="clearButton" Content="AC" HorizontalAlignment="Left" Margin="12,83,0,0" VerticalAlignment="Top" Height="36" Width="216" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="equalButton" Content="=" HorizontalAlignment="Left" Margin="159,247,0,0" VerticalAlignment="Top" Height="36" Width="142" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="minusButton" Content="-" HorizontalAlignment="Left" Margin="232,206,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="plusButton" Content="+" HorizontalAlignment="Left" Margin="232,165,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="multiplyButton" Content="x" HorizontalAlignment="Left" Margin="233,124,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
-        <Button x:Name="divideButton" Content="/" HorizontalAlignment="Left" Margin="233,83,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20"/>
+        Title="MainWindow" Height="347" Width="337">
+    <Grid x:Name="calcYT" Margin="0,0,0,4">
+        <Button x:Name="num5" Content="5" HorizontalAlignment="Left" Margin="84,165,0,0" VerticalAlignment="Top" Height="36" Width="70" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="num5_Click"/>
+        <Button x:Name="num3" Content="3" HorizontalAlignment="Left" Margin="158,206,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="num3_Click"/>
+        <Button x:Name="num7" Content="7" HorizontalAlignment="Left" Margin="12,124,0,0" VerticalAlignment="Top" Height="36" Width="68" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="num7_Click"/>
+        <Button x:Name="num2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.516,0.56" Margin="84,206,0,0" FontSize="20" Click="num2_Click"/>
+        <Button x:Name="num8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.516,0.56" Margin="85,124,0,0" FontSize="20" Click="num8_Click"/>
+        <Button x:Name="num4" Content="4" HorizontalAlignment="Left" Margin="12,165,0,0" VerticalAlignment="Top" Height="36" Width="67" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="num4_Click"/>
+        <Button x:Name="num1" Content="1" HorizontalAlignment="Left" Margin="12,206,0,0" VerticalAlignment="Top" Height="36" Width="67" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="num1_Click"/>
+        <Button x:Name="num6" Content="6" HorizontalAlignment="Left" Margin="158,165,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="num6_Click"/>
+        <Button x:Name="num9" Content="9" HorizontalAlignment="Left" Margin="159,124,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="num9_Click"/>
+        <Button x:Name="zeroButton" Content="0" HorizontalAlignment="Left" Margin="12,247,0,0" VerticalAlignment="Top" Height="36" Width="68" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="zeroButton_Click"/>
+        <Button x:Name="decimalButton" Content="." HorizontalAlignment="Left" Margin="86,247,0,0" VerticalAlignment="Top" Height="36" Width="68" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="decimalButton_Click"/>
+        <Button x:Name="clearButton" Content="AC" HorizontalAlignment="Left" Margin="12,83,0,0" VerticalAlignment="Top" Height="36" Width="216" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="clearButton_Click"/>
+        <Button x:Name="equalButton" Content="=" HorizontalAlignment="Left" Margin="159,247,0,0" VerticalAlignment="Top" Height="36" Width="142" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="equalButton_Click"/>
+        <Button x:Name="minusButton" Content="-" HorizontalAlignment="Left" Margin="232,206,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="minusButton_Click"/>
+        <Button x:Name="plusButton" Content="+" HorizontalAlignment="Left" Margin="232,165,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.5,0.5" FontSize="20" Click="plusButton_Click"/>
+        <Button x:Name="multiplyButton" Content="x" HorizontalAlignment="Left" Margin="233,124,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="multiplyButton_Click"/>
+        <Button x:Name="divideButton" Content="/" HorizontalAlignment="Left" Margin="233,83,0,0" VerticalAlignment="Top" Height="36" Width="69" RenderTransformOrigin="0.555,0.506" FontSize="20" Click="divideButton_Click"/>
+        <TextBlock x:Name="calcDisplay" HorizontalAlignment="Left" Margin="10,10,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Background="Black" Height="68" Width="292" FontSize="50" Foreground="#FFFFFDFD"/>
 
     </Grid>
 </Window>
