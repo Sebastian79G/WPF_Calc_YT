@@ -33,87 +33,156 @@ namespace WPF_Calc_YT
 
         private void zeroButton_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "0";
+            calcDisplay.Text = "";
+            userInput += "0";
+            calcDisplay.Text += userInput;
         }
 
         private void num1_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "1";
+            calcDisplay.Text = "";
+            userInput += "1";
+            calcDisplay.Text += userInput;
         }
 
         private void num2_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "2";
+            calcDisplay.Text = "";
+            userInput += "2";
+            calcDisplay.Text += userInput;
         }
 
         private void num3_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "3";
+            calcDisplay.Text = "";
+            userInput += "3";
+            calcDisplay.Text += userInput;
         }
 
         private void num4_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "4";
+            calcDisplay.Text = "";
+            userInput += "4";
+            calcDisplay.Text += userInput;
         }
 
         private void num5_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "5";
+            calcDisplay.Text = "";
+            userInput += "5";
+            calcDisplay.Text += userInput;
         }
 
         private void num6_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "6";
+            calcDisplay.Text = "";
+            userInput += "6";
+            calcDisplay.Text += userInput;
         }
 
         private void num7_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "7";
+            calcDisplay.Text = "";
+            userInput += "7";
+            calcDisplay.Text += userInput;
         }
 
         private void num8_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "8";
+            calcDisplay.Text = "";
+            userInput += "8";
+            calcDisplay.Text += userInput;
         }
 
         private void num9_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += "9";
+            calcDisplay.Text = "";
+            userInput += "9";
+            calcDisplay.Text += userInput;
         }
 
         private void decimalButton_Click(object sender, RoutedEventArgs e)
         {
-            calcDisplay.Text += ".";
+            calcDisplay.Text = ".";
+            //userInput = firstValue+".";
+            //calcDisplay.Text += userInput;
         }
 
         private void plusButton_Click(object sender, RoutedEventArgs e)
         {
             rodzajDzialania = '+';
+            firstValue = userInput;
+            userInput = "";
         }
 
         private void minusButton_Click(object sender, RoutedEventArgs e)
         {
             rodzajDzialania = '-';
+            firstValue = userInput;
+            userInput = "";
         }
 
         private void multiplyButton_Click(object sender, RoutedEventArgs e)
         {
             rodzajDzialania = '*';
+            firstValue = userInput;
+            userInput = "";
         }
 
         private void divideButton_Click(object sender, RoutedEventArgs e)
         {
             rodzajDzialania = '/';
+            firstValue = userInput;
+            userInput = "";
         }
 
         private void equalButton_Click(object sender, RoutedEventArgs e)
         {
-            //rodzajDzialania = '=';
+            secondValue = userInput;
+            double firstNum, secondNum;
+            firstNum = Convert.ToDouble(firstValue);
+            secondNum = Convert.ToDouble(secondValue);
+
+            //Dodawanie
+            if (rodzajDzialania == '+')
+            {
+                result = firstNum + secondNum;
+                calcDisplay.Text = result.ToString();
+            }
+            //Odejmowanie
+            else if (rodzajDzialania == '-')
+            {
+                result = firstNum - secondNum;
+                calcDisplay.Text = result.ToString();
+            }
+            //Mnożenie
+            else if (rodzajDzialania == '*')
+            {
+                result = firstNum * secondNum;
+                calcDisplay.Text = result.ToString();
+            }
+            //Dzielenie
+            else if (rodzajDzialania == '/')
+            {
+                if (secondNum == '0')
+                {
+                    calcDisplay.Text = "Moron";
+                }
+                else
+                {
+                    result = firstNum / secondNum;
+                    calcDisplay.Text = result.ToString();
+                }
+            }
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
         {
-            //rodzajDzialania = 'c';
+            firstValue = "";
+            secondValue = "";
+            userInput = "";
+            result = 0.0;
+            calcDisplay.Text = "0";
         }
     }
 }
